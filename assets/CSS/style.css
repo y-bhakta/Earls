@@ -308,3 +308,159 @@ header .menu ul li:hover .dropd{
     border-radius: 50%;
 }
 /* reservation end  */
+/* menu section start  */
+
+.content h3::before{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #c9ab81;
+    display: block;
+    margin: 0 auto 20px auto;
+    position: absolute;
+    top: 40px;
+}
+
+.menu .img{
+    width: 100%;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.menu .img img:hover{
+    transform: scale(1.1);
+}
+
+.menu .content .img-fluid{
+    animation: img-fluid 10s infinite linear;
+}
+
+.menu .con .img-translate {
+    bottom: 6%;
+    animation: img-translate 10s infinite linear;
+}
+
+.menu .shape img{
+    transform: translateX(150px) translateY(-180px);
+}
+
+/* menu section end  */
+
+/* about section start  */
+
+.client .img-rotate {
+   animation: img-rotate 8s infinite linear;
+}
+
+/* about section end  */
+
+/* blog section start  */
+
+.blog .card img{
+    transition: all 0.5s ease-in-out;
+}
+
+.blog .card:hover img{
+    transform: scale(1.1);
+}
+
+.blog .card .card-body .icons a, .icons p{
+    color: gray;
+    transition: 0.7s;
+}
+
+.blog .card .card-body .icons a:hover{
+    color: #c9ab81;
+}
+
+.blog .card .card-body a{
+    color: #ffffff;
+    transition: 0.7s;
+    line-height: 30px;
+}
+
+.blog .card .card-body a:hover{
+    color: #c9ab81;
+}
+
+/* blog section end  */
+
+/* footer section start  */
+
+footer{
+    position: relative;
+}
+
+footer .add::before{
+    content: '';
+    width: 1px;
+    height: 278px;
+    background-color: #ffffff;
+    border-right: #c9ab81;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+footer .add a{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+footer .add a:hover{
+    color: #c9ab81;
+}
+
+footer .foot-end ul li a{
+    color: #ffffff;
+    transition: 0.7s;
+}
+
+footer .foot-end ul li a:hover{
+    color: #c9ab81;
+}
+
+/* footer section end  */
+
+@keyframes img-rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes img-translate {
+    0% {
+        transform: translateY(10px); /* Starting position */
+    }
+
+    50% {
+        transform: translateY(30px); /* Moves down */
+    }
+
+    100% {
+        transform: translateY(10px); /* Returns to the starting position */
+    }
+}
+
+@keyframes img-fluid {
+    0% {
+        transform: translateX(10px); /* Starting position */
+    }
+
+    50% {
+        transform: translateX(30px); /* Moves down */
+    }
+
+    100% {
+        transform: translateX(10px); /* Returns to the starting position */
+    }
+}
