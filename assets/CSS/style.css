@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 a{
     text-decoration: none !important;
@@ -20,6 +20,9 @@ a{
 }
 .btn-up:hover a{
     background-color: #715B3E !important;
+}
+body{
+    max-width: 100vw;
 }
 /* header start  */
 header .menu ul li .dropd{
@@ -173,6 +176,12 @@ header .menu ul li:hover .dropd{
     background-repeat: no-repeat;
     background-size: cover;
     height: 785px;
+}
+.reservation{
+    background-image: url("../IMAGES/menu-02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .rounded-30{
     border-radius: 25px;
@@ -330,10 +339,6 @@ header .menu ul li:hover .dropd{
     animation: img-translate 10s infinite linear;
 }
 
-.menu .shape img{
-    transform: translateX(150px) translateY(-180px);
-}
-
 /* menu section end  */
 
 /* about section start  */
@@ -381,17 +386,6 @@ footer{
     position: relative;
 }
 
-footer .add::before{
-    content: '';
-    width: 1px;
-    height: 278px;
-    background-color: #ffffff;
-    border-right: #c9ab81;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-}
-
 footer .add a{
     color: #ffffff;
     transition: 0.5s;
@@ -411,45 +405,3 @@ footer .foot-end ul li a:hover{
 }
 
 /* footer section end  */
-
-@keyframes img-rotate{
-    0% {
-        transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes img-translate {
-    0% {
-        transform: translateY(10px); /* Starting position */
-    }
-
-    50% {
-        transform: translateY(30px); /* Moves down */
-    }
-
-    100% {
-        transform: translateY(10px); /* Returns to the starting position */
-    }
-}
-
-@keyframes img-fluid {
-    0% {
-        transform: translateX(10px); /* Starting position */
-    }
-
-    50% {
-        transform: translateX(30px); /* Moves down */
-    }
-
-    100% {
-        transform: translateX(10px); /* Returns to the starting position */
-    }
-}
